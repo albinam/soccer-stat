@@ -13,7 +13,7 @@ function App() {
     return (
         <div className={styles}>
             <HashRouter>
-                <BrowserRouter>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
                     <Switch>
                         <Route path='/' exact><Redirect to='/leagues'/>
                         </Route>
