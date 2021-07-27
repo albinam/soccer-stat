@@ -1,4 +1,5 @@
 {
+  "homepage": "https://albinam.github.io/soccer-stat",
   "name": "soccer-stat",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
     "date-fns": "^2.22.1",
+    "git": "^0.1.5",
     "jquery": "^3.6.0",
     "mdb-react-ui-kit": "^1.1.0",
     "mdbreact": "^5.1.0",
@@ -31,6 +33,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -52,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
